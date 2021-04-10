@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:ital@1&display=swap");
+
+/*
+
+font-family: 'Pattaya', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/*utilities*/
+
+h1 {
+  font-size: 2.6rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+}
+
+label {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+p,
+a,
+ul {
+  font-size: 2.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  border: none;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  padding: 2rem 4rem;
+  background-color: #46525c;
+  color: white;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;
+}
+
+button:hover {
+  background-color: #25292c;
+  color: white;
+}
+
+/* Navbar */
+
+.main-head {
+  background-color: #46525c;
+  color: white;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  top: 0px;
+  z-index: 2;
+}
+
+.main-head nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  flex: 2 1 40rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 40rem;
+  list-style: none;
+}
+
+/* Show case area */
+
+.showcase {
+  background: linear-gradient(rgba(0, 0, 0.4), transparent),
+    url("img/How-God-like-Beatles-inspired-one-of-Pink-Floyds-earliest-classics.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  min-height: 90vh;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  opacity: 1;
+  height: 100%;
+  padding: 2rem;
+}
+
+.showcase-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.showcase-items h2 {
+  color: white;
+}
+
+.showcase-items p {
+  color: white;
+  margin: 1rem;
+}
+
+/* About Section */
+
+#about {
+  background-color: #46525c;
+}
+
+.about-items {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.image {
+  flex: 1 1 40rem;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  border-radius: 50%;
+  width: 80%;
+  margin: auto;
+}
+
+.image-overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(70, 68, 68, 0.6);
+  color: #fff;
+  width: 80%;
+  margin: auto;
+  border-radius: 50%;
+  text-align: center;
+  min-height: 100%;
+  padding: 5rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image-overlay:hover {
+  opacity: 0.9;
+}
+
+.image-overlay div {
+  font-size: 2.6rem;
+  margin-top: 2.2rem;
+  padding-top: 2.2rem;
+}
+
+.image-overlay p {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.image-overlay > * {
+  transform: translateY(30px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.image-overlay:hover > * {
+  transform: translateY(0);
+}
+
+.about-info {
+  padding: 1rem;
+  flex: 2 1 40rem;
+}
+
+/* Albums Section*/
+
+#albums {
+  min-height: 100vh;
+  background: linear-gradient(rgb(149, 149, 153), #46525c);
+  text-align: center;
+}
+
+#albums h2 {
+  text-decoration: underline;
+  color: white;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 2rem;
+}
+
+.grid-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-wrapper div {
+  padding: 5rem;
+}
+
+.album1,
+.album2,
+.album3,
+.album4,
+.album5,
+.album6 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+.image-album-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(70, 68, 68, 0.6);
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image-album-overlay:hover {
+  opacity: 0.9;
+}
+
+.image-album-overlay-blur {
+  backdrop-filter: blur(7px);
+}
+
+.image-album-overlay .title {
+  font-size: 2.6rem;
+}
+
+.image-album-overlay .description {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+/*Contact Section*/
+
+#contact {
+  min-height: 90vh;
+  background: linear-gradient(transparent, rgba(0, 0, 0.6)),
+    url("img/contact-img.jpg") no-repeat center center/cover;
+  opacity: 0.9;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form-wrapper {
+  background-color: rgba(70, 68, 68, 0.6);
+  border-radius: 20px;
+  color: white;
+  width: 70%;
+  margin: auto;
+}
+
+.form-head {
+  padding: 4rem;
+  text-align: center;
+}
+
+.form-name,
+.form-message {
+  padding: 3rem;
+  text-align: center;
+}
+
+.form-name input,
+.form-message textarea {
+  padding: 1rem;
+  width: 40%;
+}
+
+.form-name label,
+.form-message label {
+  margin: 2rem;
+  display: block;
+}
+
+.form-wrapper button {
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 8rem;
+  padding: 2rem;
+}
+
+.form-message label {
+  display: block;
+}
+
+.form-message {
+  padding-top: 0;
+}
+
+.nav {
+  background-color: #46525c;
+  color: white;
+}
+
+footer {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer h1 {
+  flex: 2 1 40rem;
+  margin-bottom: 2rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  flex: 1 1 40rem;
+}
+
+/* Media queries*/
+
+@media screen and (max-width: 985px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  .showcase-items h2 {
+    margin-top: 3.5rem;
+  }
+
+  .showcase {
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .about-items {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 2rem;
+  }
+
+  .image-album-overlay .title {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .image-album-overlay .description {
+    margin: 0.5rem;
+  }
+
+  .form-name input,
+  .form-message textarea {
+    padding: 1rem;
+    width: 75%;
+  }
+
+  .form-wrapper {
+    width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
