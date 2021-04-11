@@ -444,4 +444,8 @@ footer ul {
   footer {
     text-align: center;
   }
+
+  footer h1 {
+    margin-bottom: 2rem;
+  }
 }
