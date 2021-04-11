@@ -65,6 +65,7 @@ button {
   color: white;
   cursor: pointer;
   transition: background 0.5s ease-in-out;
+  outline: none;
 }
 
 button:hover {
@@ -339,6 +340,10 @@ nav ul {
 .form-message textarea {
   padding: 1rem;
   width: 40%;
+}
+
+.form-message textarea {
+  resize: none;
 }
 
 .form-name label,
