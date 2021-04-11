@@ -400,6 +400,9 @@ footer ul {
   nav {
     text-align: center;
   }
+  .logo {
+    margin-bottom: 2rem;
+  }
   .showcase-items h2 {
     margin-top: 3.5rem;
   }
